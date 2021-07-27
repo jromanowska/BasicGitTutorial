@@ -12,3 +12,5 @@ LazyData: true
 Suggests: 
     learnr
 RoxygenNote: 7.1.1
+Imports: 
+    fontawesome
