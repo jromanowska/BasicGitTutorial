@@ -84,22 +84,30 @@ Check that the changes are there by navigating to the `History` tab.
 
 <img src="images/git_tab3.png">
 
+You will see the log of all the changes in the top part of the window
+and details of the selected commit in the bottom part of the window.
+
+<img src="images/git_tab4.png" style="width: 100%;">
+
+
 ### Exercise 3
 
 Now, delete a random piece of code or text and `commit` the change.
 
 ---
 
+## Time travelling with git
+
 **OH NO! I want it back!**
 
 _It's not a problem with `git`!_
 
-## Exercise 4
+### Exercise 4
 
 When the changes are commited, select the `History` view, navigate to the commit
 that includes the code version you want, and click on `View file @ <SHA-id>`.
 
-<img src="images/git_tab4.png">
+<img src="images/git_tab5.png" style="width: 100%;">
 
 Next, simply copy the code into your current file or save the previous version
 of the file.
