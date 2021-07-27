@@ -70,6 +70,18 @@ comments.
 
 Notice that the icon beside the modified file changed.
 
+<img src="images/git_tab2.png">
+
+Now, `stage` and `commit` the new changes.
+
+> `r fa("lightbulb")` HINT: git invisibly creates a log where it tracks only
+> the changed lines, not creating unnecessary copies of entire files.
+> This, however, works only when the file is in text format!
+
+---
+
+### Exercise 3
+
 
 
 
