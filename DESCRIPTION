@@ -1,16 +1,21 @@
 Package: BasicGitTutorial
-Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Learning to use git and github
+Version: 0.9.0
+Authors@R: 
+    person(given = "Julia",
+           family = "Romanowska",
+           role = c("aut", "cre"),
+           email = "Julia.Romanowska@uib.no",
+           comment = c(ORCID = "0000-0001-6733-1953"))
+Description: Tutorials created for a course at Univ.of Bergen, for PhD students
+    in medicine. Contains instructions on how to use git in RStudio and git
+    together with github.
+License: `use_gpl3_license()`
 Encoding: UTF-8
 LazyData: true
 Suggests: 
     learnr
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     fontawesome

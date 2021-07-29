@@ -1,7 +1,12 @@
 ---
 title: "Git and github for multiple users"
-output: learnr::tutorial
+output:
+  learnr::tutorial:
+    toc_depth: 3
+    theme: united
+    highlight: pygments
 runtime: shiny_prerendered
+description: "Learnr tutorial to start off with git and github. Created for a course for medicine PhD students at Univ.of Bergen."
 ---
 
 ```{r setup, include=FALSE}
