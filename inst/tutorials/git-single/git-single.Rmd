@@ -40,7 +40,7 @@ Add the script or the .Rmd file you have been working on to your repository.
 
 > `r fa("exclamation-triangle")` Do not `push` changes!
 
-### Quiz 1
+### Quiz
 
 ```{r quiz}
 quiz(
