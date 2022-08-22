@@ -38,7 +38,7 @@ Add the script or the .Rmd file you have been working on to your repository.
 > `r fa("lightbulb")` HINT: to make `git` keep track of your files, you need to `stage` the changes
 > and then `commit` those.
 
-> `r fa("exclamation-triangle")` Do not `push` changes!
+> `r fa("triangle-exclamation")` Do not `push` changes!
 
 ### Quiz
 

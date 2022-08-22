@@ -110,7 +110,7 @@ chosen file, in the same fragment of code/text. Save changes, commit, and push.
 
 > `r fa("lightbulb")` Each group member does it in their own pace!
 
-> `r fa("exclamation-triangle")` Only the first `push` action will be frictionless!
+> `r fa("triangle-exclamation")` Only the first `push` action will be frictionless!
 > Read the information returned in the output window and act accordingly.
 
 
