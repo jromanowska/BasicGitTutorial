@@ -1,5 +1,7 @@
 # BasicGitTutorial
 
+[![DOI](https://zenodo.org/badge/389995100.svg)](https://zenodo.org/doi/10.5281/zenodo.10532208)
+
 Basic git tutorial for medicine PhD students, Univ.of Bergen.
 
 ## How to use it?
