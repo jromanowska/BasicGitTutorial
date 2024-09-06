@@ -23,10 +23,12 @@ To complete this tutorial, you will need:
 
 - R & RStudio installed
 - git installed
-- create a project inside RStudio with `git` version control enabled
-_(you can use the project created in `Git for single user` tutorial)_
 - a GitHub account
-- create an empty repository under GitHub account of one of the persons in the group
+
+## Create and connect to a repository
+
+1. **One of the group members:** create a new repository on GitHub
+adding `README.md` to it
 
 > **NB:** make sure the new repo is public!
 
@@ -34,32 +36,12 @@ _(you can use the project created in `Git for single user` tutorial)_
 
 The new repository on GitHub is empty. To work with it, we will do two things:
 
-1. the **repository owner** needs to connect their local repo (e.g., the
-one created for the previous tutorial) with the remote repo on GitHub
-
-    - the instructions are visible in the webpage of the new, empty repo
-    - in brief: open a console (command line tool) by navigating to `Terminal` tab in RStudio
-    - then, put the following command there and hit enter    
-    `git remote add origin git@github.com:<username>/<repo_name>`
-    - **NB:** you can get the address from the green 'Code' button on the main
-    webpage of your repo
-    
-<img src="images/github_code_button.png" style="width: 90%;">
-
-- the last action is to copy the local git history to the remote by
-running push changes
-
-<img src="images/branch3.png" style="width: 80%;">
-
-- make sure that the remote repo on GitHub contains all the files 
-the owner has locally
-    
-2. the **repo owner** needs to give the other group members access to
+1. the **repo owner** needs to give the other group members access to
 change this repo
 
     - go to "Settings" and "Manage access" on GitHub page of the repo
 
-3. **other members of the group** need to clone this repo
+2. **other members of the group** need to clone this repo
 
     - in RStudio, choose "New Project" under "File" menu
     - in the pop-up window choose "Version control"
@@ -74,6 +56,11 @@ change this repo
 repo in the format `git@github.com:<username>/<repo_name>`
 
 <img src="images/rstudio_new_project3.png" style="width: 70%;">
+
+> **NB:** in the 'Repository URL' field put the address from the green 'Code'
+button on the main webpage of your repo
+
+<img src="images/github_code_button.png" style="width: 90%;">
 
 - you can select the folder where to clone the repo by clicking the
 "Browse" button
