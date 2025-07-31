@@ -74,9 +74,8 @@ Notice that the icon beside the modified file changed.
 
 Now, `stage` and `commit` the new changes.
 
-> `r fa("lightbulb")` HINT: git invisibly creates a log where it tracks only
-> the changed lines, not creating unnecessary copies of entire files.
-> This, however, works only when the file is in text format!
+> `r fa("lightbulb")` HINT: git invisibly creates a log where it tracks
+> the changed lines. This, however, works only when the file is in text format!
 
 ---
 
@@ -115,3 +114,54 @@ of the file.
 > **NOTE:** there is also a `revert` option for each file, which reverts all the
 changes made after the last commit.
 
+---
+
+## Branching
+
+Branching creates parallel histories of code development. It's useful e.g., if you
+need to test an idea that you're not sure of, or if you're working with someone
+else and you don't want to interrupt one another while coding different things.
+
+Here, you'll learn how to create branches while working alone.
+
+### Exercise 5
+
+Create a branch by clicking on "New Branch" button in git tab and give it a name.
+
+<img src="images/git_tab6_new_branch.png" style="width: 100%;">
+
+> `r fa("lightbulb")` HINT: branches are created for a specific _task_, so they
+> need to be named as such. Do not create branch names such as "Alice" or 
+> "my_branch1" since these will not make meaning.
+
+You should see a similar information:
+
+```
+>>> /usr/bin/git checkout -B learn_branching
+Switched to a new branch 'learn_branching'
+```
+
+Close the pop-up window and check that you are now in a new branch.
+
+<img src="images/git_tab7_new_branch_checkout.png" style="width: 100%;">
+
+> **NOTE:** Everything should look exactly the same because we have not
+> made any changes yet.
+
+### Exercise 6
+
+Open the history and inspect. There should be two labels by the latest
+commit: one called "main" and the other with text containing your new branch.
+
+```
+HEAD -> refs/heads/learn_branching
+```
+
+> **NOTE:** This simply tells git that your branch is at the same point as the
+> version of the repository in 'main'.
+
+Make some changes to a file or add a new file and commit the changes.
+
+Inspect the history again - _what has changed?_
+
+### Quiz 2
