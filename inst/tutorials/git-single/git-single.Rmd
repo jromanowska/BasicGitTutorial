@@ -24,7 +24,7 @@ To complete this tutorial, you will need:
 - git installed
 - create a project inside RStudio with `git` version control enabled
 
-## Git in RStudio
+## `r fa("git")` Git in RStudio
 
 Locate the `git` tab in your RStudio. At first, none of the files that are in the
 current project are tracked, so the _status_ icon shows a question mark `?`.
@@ -40,7 +40,7 @@ Add the script or the .Rmd file you have been working on to your repository.
 
 > `r fa("triangle-exclamation")` Do not `push` changes!
 
-### Quiz
+### Quiz 1
 
 ```{r quiz}
 quiz(
@@ -58,7 +58,7 @@ quiz(
 ```
 
 
-## History of changes
+## `r fa("clock-rotate-left")` History of changes
 
 Now that your initial version is saved in git, we will learn how to navigate
 the history of changes.
@@ -95,7 +95,7 @@ Now, delete a random piece of code or text and `commit` the change.
 
 ---
 
-## Time travelling with git
+## `r fa("rotate-left")` Time travelling with git
 
 **OH NO! I want it back!**
 
@@ -116,7 +116,7 @@ changes made after the last commit.
 
 ---
 
-## Branching
+## `r fa("code-branch")` Branching
 
 Branching creates parallel histories of code development. It's useful e.g., if you
 need to test an idea that you're not sure of, or if you're working with someone
@@ -128,7 +128,7 @@ Here, you'll learn how to create branches while working alone.
 
 Create a branch by clicking on "New Branch" button in git tab and give it a name.
 
-<img src="images/git_tab6_new_branch.png" style="width: 100%;">
+<img src="images/git_tab6_new_branch.png" style="width: 80%;">
 
 > `r fa("lightbulb")` HINT: branches are created for a specific _task_, so they
 > need to be named as such. Do not create branch names such as "Alice" or 
@@ -164,4 +164,128 @@ Make some changes to a file or add a new file and commit the changes.
 
 Inspect the history again - _what has changed?_
 
+---
+
+## `r fa("frog")` Branch hopping
+
+Now that you have two versions of the code, you can easily switch between them.
+
+### Exercise 7
+
+To change the active branch, simply choose it from the dropdown menu on the
+right top corner of the Git tab.
+
+Examine the changes in the code and how History looks like when switching
+branches.
+
+### Exercise 8
+
+Go to the main branch, add a file and commit. Next, create a new branch and make
+changes in the new file.
+
+Inspect the history again. Switch branches and look how the scripts change.
+
+> **NOTE:** each time you commit, make sure you know which branch are you on!
+
+---
+
+##  `r fa("code-merge")` Merging
+
+After we're done with the coding task in our branch, we need to choose what
+will happen with it:
+
+1. **If we want to keep the changes created in the branch** - merge this
+branch with 'main' _and delete the branch_.
+1. **If we're not satisfied with the changes** - delete this branch without
+merging.
+
+> **NOTE:** Branches should be _short-lived_ so it's important to keep their
+> number in the repo at minimum.
+
+### Exercise 7
+
+RStudio GUI doesn't allow for merging or deleting branches, so we'll dive into
+the terminal!
+
+> `r fa("lightbulb")` HINT: you'll find the terminal tab beside the 'Console'.
+
+> `r fa("lightbulb")` HINT: by default, terminal shows you different things, 
+> depending on your OS:
+>
+> - on Mac and Linux, you'll see the username, hostname (name of your computer),
+> current directory, and the symbol `$`.
+> - on Windows, you'll probably see only the current directory path and `>`.
+>
+> After a command is executed, you should be able to see that same line again.
+> If nothing displays, the command is probably still executing.
+
+Run the command:
+
+```sh
+git branch
+```
+
+_You should be able to see the names of the branches, where one of them has an
+asterisk (`*`) to mark it as the active branch._ To merge or delete a branch,
+we need to be on 'main' branch, so first, switch to that one.
+
+To merge a branch, run the command:
+
+```sh
+git merge <branch-to-be-merged>
+```
+
+(put the name of your branch instead of `<branch-to-be-merged>`). You should see
+a summary of the changes made, e.g.:
+
+```
+Merge made by the 'ort' strategy.
+ scripts/script1.R | 6 ------
+ 1 file changed, 6 deletions(-)
+```
+
+Inspect the code - _how did it change?_
+
+Check which branches are available again (`git branch`) - the branch was
+merged successfully, meaning that now the 'main' (active) branch includes all
+the changes we had on the other branch, but the other branch is still there.
+We need to delete the merged branch:
+
+```sh
+git branch -d <branch-to-be-deleted>
+```
+
+Check which branches are available again and inspect the History.
+
 ### Quiz 2
+
+```{r quiz_branch}
+quiz(
+  question("How many branches should you keep in the repository?",
+    answer("as many as the files"),
+    answer("as few as possible", correct = TRUE),
+    answer("always 3: main, bugs, release")
+  ),
+  question("Which names are best suited for naming branches?",
+    answer("'test_model_with_adjustments', 'check_B_normalization',
+           'version_for_A_journal'", correct = TRUE),
+    answer("'2024-03-05', '2024-05-06'"),
+    answer("'JaneDoe', 'AngryCowboy'")
+  )
+)
+```
+
+---
+
+## Summary
+
+Now, you should know how to:
+
+- enable `r fa("git")` in your RStudio projects
+- commit changes and inspect the history
+- revert changes `r fa("rotate-left")`
+- create parallel versions of history with branching `r fa("code-branch")`
+- switch `r fa("frog")` between branches, `r fa("code-merge")` merge, and `r fa("trash")` delete them
+
+> `r fa("medal")` Congratulations! You're ready to learn how to use
+> `r fa("git")` and `r fa("github")` in collaboration!
