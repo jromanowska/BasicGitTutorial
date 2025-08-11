@@ -41,7 +41,7 @@ change this repo
 
     - go to "Settings" and "Manage access" on GitHub page of the repo
 
-2. **other members of the group** need to clone this repo
+2. **all members of the group** need to clone this repo
 
     - in RStudio, choose "New Project" under "File" menu
     - in the pop-up window choose "Version control"
@@ -110,10 +110,9 @@ files, and create a **pull request** to merge their own branch into the _main_ o
 ### Exercise 2
 
 In the `Git` tab, in RStudio, click on "New Branch" and name it as you wish.
-You can use one of the following templates:
 
-- `<your_name>-test`
-- `new-func-<your_name>`
+> Remember that branches are short-lived, so create a name that has to do with
+> a function or an action that you will code.
 
 <img src="images/branch1.png" style="width: 80%;">
 
@@ -191,4 +190,19 @@ the green button.
 
 Next, the repository owner can accept the pull request, merge the branches, and
 the branch can be deleted.
+
+---
+
+## Summary
+
+Now, you should know how to:
+
+- create an R project connected to GitHub repo
+- commit changes and inspect the history online
+- collaborate on coding online
+- resolve merge conflicts
+- work in branches and create pull requests
+
+> `r fa("medal")` Congratulations! You're ready to use
+> `r fa("git")` and `r fa("github")` in collaboration!
 
