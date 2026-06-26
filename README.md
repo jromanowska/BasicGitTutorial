@@ -8,7 +8,7 @@ Basic git tutorial for medicine PhD students, Univ.of Bergen.
 
 Install this package through:
 
-```
+```r
 # uncomment the line below if you do not have `devtools` installed:
 # install.packages("devtools")
 devtools::install_github("jromanowska/BasicGitTutorial")
