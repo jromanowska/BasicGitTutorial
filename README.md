@@ -9,9 +9,9 @@ Basic git tutorial for medicine PhD students, Univ.of Bergen.
 Install this package through:
 
 ```r
-# uncomment the line below if you do not have `devtools` installed:
-# install.packages("devtools")
-devtools::install_github("jromanowska/BasicGitTutorial")
+# uncomment the line below if you do not have {pak} installed:
+# install.packages("pak")
+pak::pak("jromanowska/BasicGitTutorial")
 ```
 
 Then, go to the _"Tutorial"_ tab in your RStudio, find the tutorial with
